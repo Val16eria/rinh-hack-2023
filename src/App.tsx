@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
+import React, { FC } from 'react';
+import { Header } from './features/header';
 
-function App() {
+const App: FC = () => {
   return (
     <div>
+      <Header />
       App
     </div>
   );
