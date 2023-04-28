@@ -47,7 +47,7 @@ export const Content: FC = () => {
 			<ul className='bus-items'>
 
 				{Bus.map((item) => (
-					<NavLink to={`bus/${item.id}`}>
+					<NavLink to={`bus/${item.id}`} >
 						<li key={item.id} className='bus-item'>
 							<div className='bus-item__header'>
 								<div className='bus-item__header_title'>

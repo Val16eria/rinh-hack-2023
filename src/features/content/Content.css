@@ -28,6 +28,7 @@
   cursor: pointer;
   padding: 5px;
 }
+
 .bus-item:hover {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -79,4 +80,9 @@ iframe {
   width: 700px;
   padding: 0;
   margin: 0;
+}
+
+.active {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
