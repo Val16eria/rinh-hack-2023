@@ -4,28 +4,3 @@
   justify-content: space-between;
   margin: 50px;
 }
-
-.header-right {
-  display: flex;
-  flex-direction: row;
-  gap: 65px;
-}
-
-.header-right__city {
-  padding: 5px 10px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-
-.header-right__city p{
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.header-right__theme button {
-  border: none;
-  background: none;
-}
