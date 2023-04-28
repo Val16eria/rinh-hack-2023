@@ -1,25 +1,27 @@
 import React, { FC } from 'react';
 
-import Logo from '../../assets/logo.svg';
-import Moon from '../../assets/moon.svg';
+import { DarkMode } from '../../shared/ui/dark-mode';
+
+import LogoB from '../../assets/logoB.svg';
+import LogoW from '../../assets/logoW.svg';
 import './Header.css';
 
-export const Header: FC = () => {
+interface IHeader {
+	theme: 'dark' | 'light';
+	changeTheme: () => void;
+}
+
+export const Header: FC<IHeader> = ({theme, changeTheme}) => {
+
 	return (
 		<div className='header-container'>
 			<div className='header-logo'>
-				<img src={Logo} alt='logo' />
+				{theme === 'dark' ?
+					<img src={LogoW} alt='logo' /> :
+					<img src={LogoB} alt='logo' />
+				}
 			</div>
-			<div className='header-right'>
-				<div className='header-right__city'>
-					<p>Ростов-на-Дону</p>
-				</div>
-				<div className='header-right__theme'>
-					<button>
-						<img src={Moon} alt='theme' />
-					</button>
-				</div>
-			</div>
+			<DarkMode theme={theme} changeTheme={changeTheme} />
 		</div>
 	);
 }
