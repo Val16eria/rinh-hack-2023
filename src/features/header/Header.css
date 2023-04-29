@@ -4,3 +4,13 @@
   justify-content: space-between;
   margin: 50px;
 }
+
+@media(max-width: 576px) {
+  .header-container {
+    margin: 30px;
+  }
+  .header-logo img {
+    width: 140px;
+    height: 10px;
+  }
+}

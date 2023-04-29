@@ -1,0 +1,6 @@
+@media(max-width: 576px) {
+  .theme-mode img {
+    width: 24px;
+    height: 24px;
+  }
+}
