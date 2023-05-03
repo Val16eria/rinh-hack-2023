@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { TTheme } from '../shared/types/type-theme';
+import { TTheme } from '../types/type-theme';
 
 export const useTheme = (): [("light" | "dark"), (() => void)] => {
 

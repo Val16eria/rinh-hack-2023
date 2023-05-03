@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { useTheme } from '../../hooks/useTheme';
+import { useTheme } from '../../shared/hooks/useTheme';
 
 import { Header } from '../../features/header';
 import { Content } from '../../features/content';
