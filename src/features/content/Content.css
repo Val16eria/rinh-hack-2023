@@ -1,0 +1,23 @@
+.content-container {
+  height: 100vh;
+  margin: 80px 190px;
+  padding: 10px;
+
+  background-color: var(--background);
+
+  box-shadow: var(--shadow);
+  filter: var(--filter);
+  border-radius: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media(max-width: 576px) {
+  .content-container {
+    margin: 30px 40px;
+  }
+}
